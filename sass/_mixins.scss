@@ -1,0 +1,14 @@
+@mixin gradient($dgreen, $lgreen) {
+	background: $dgreen;
+	background: -moz-linear-gradient(top,  $dgreen 0%, $lgreen 100%);
+	background: -webkit-linear-gradient(top, $dgreen 0%, $lgreen 100%);
+	background: linear-gradient(to bottom,  $dgreen 0%, $lgreen 100%);
+
+}
+
+@mixin gradient2($sgreen, $sblue) {
+    background: $sgreen;
+    background: -moz-linear-gradient(top, $sgreen 0%, $sblue 100%);
+    background: -webkit-linear-gradient(top, $sgreen 0%, $sblue 100%);
+    background: linear-gradient(to bottom, $sgreen 0%, $sblue 100%);
+}

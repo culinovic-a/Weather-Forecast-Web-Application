@@ -1,0 +1,92 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif; }
+  html .container-fluid, body .container-fluid {
+    height: 100%;
+    background: url("../images/nis.png") no-repeat;
+    background-size: cover; }
+    html .container-fluid #weather-app, body .container-fluid #weather-app {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 80%;
+      height: 450px;
+      background-color: white;
+      opacity: 0.7;
+      transform: translate(-50%, -50%);
+      border-radius: 5px; }
+      html .container-fluid #weather-app .first, body .container-fluid #weather-app .first {
+        height: 58%;
+        padding: 1% 1%; }
+        html .container-fluid #weather-app .first .ovrly, body .container-fluid #weather-app .first .ovrly {
+          background: #134E5E;
+          background: -moz-linear-gradient(top, #134E5E 0%, #21151C 100%);
+          background: -webkit-linear-gradient(top, #134E5E 0%, #21151C 100%);
+          background: linear-gradient(to bottom, #134E5E 0%, #21151C 100%);
+          opacity: 0.9;
+          height: 100%;
+          width: 100%; }
+          html .container-fluid #weather-app .first .ovrly .fr, body .container-fluid #weather-app .first .ovrly .fr {
+            padding-top: 40px; }
+          html .container-fluid #weather-app .first .ovrly .tx, body .container-fluid #weather-app .first .ovrly .tx {
+            color: white; }
+          html .container-fluid #weather-app .first .ovrly .txt1, html .container-fluid #weather-app .first .ovrly .txt2, html .container-fluid #weather-app .first .ovrly .txt3, html .container-fluid #weather-app .first .ovrly .txt4, body .container-fluid #weather-app .first .ovrly .txt1, body .container-fluid #weather-app .first .ovrly .txt2, body .container-fluid #weather-app .first .ovrly .txt3, body .container-fluid #weather-app .first .ovrly .txt4 {
+            color: white;
+            font-size: 12px; }
+          html .container-fluid #weather-app .first .ovrly .txt2::after, body .container-fluid #weather-app .first .ovrly .txt2::after {
+            content: "";
+            background: white;
+            position: absolute;
+            bottom: 25%;
+            left: 0;
+            height: 50%;
+            width: 1px; }
+          html .container-fluid #weather-app .first .ovrly .txt3::after, body .container-fluid #weather-app .first .ovrly .txt3::after {
+            content: "";
+            background: white;
+            position: absolute;
+            bottom: 25%;
+            left: 0;
+            height: 50%;
+            width: 1px; }
+          html .container-fluid #weather-app .first .ovrly .txt4::after, body .container-fluid #weather-app .first .ovrly .txt4::after {
+            content: "";
+            background: white;
+            position: absolute;
+            bottom: 25%;
+            left: 0;
+            height: 50%;
+            width: 1px; }
+          html .container-fluid #weather-app .first .ovrly .txt5, body .container-fluid #weather-app .first .ovrly .txt5 {
+            padding-top: 30px; }
+            html .container-fluid #weather-app .first .ovrly .txt5 .temp, body .container-fluid #weather-app .first .ovrly .txt5 .temp {
+              font-size: 60px;
+              font-weight: 100;
+              color: white; }
+            html .container-fluid #weather-app .first .ovrly .txt5 p, body .container-fluid #weather-app .first .ovrly .txt5 p {
+              color: white;
+              font-size: 30px;
+              border-bottom: 1px solid white; }
+      html .container-fluid #weather-app .second, body .container-fluid #weather-app .second {
+        height: 42%;
+        padding: 0 1% 1% 1%; }
+        html .container-fluid #weather-app .second .ovrly, body .container-fluid #weather-app .second .ovrly {
+          background: #21151C;
+          background: -moz-linear-gradient(top, #21151C 0%, #134E5E 100%);
+          background: -webkit-linear-gradient(top, #21151C 0%, #134E5E 100%);
+          background: linear-gradient(to bottom, #21151C 0%, #134E5E 100%);
+          opacity: 0.9;
+          height: 100%;
+          width: 100%; }
+          html .container-fluid #weather-app .second .ovrly .card, body .container-fluid #weather-app .second .ovrly .card {
+            background: transparent;
+            border: none; }
+            html .container-fluid #weather-app .second .ovrly .card .card-header, html .container-fluid #weather-app .second .ovrly .card .card-footer, body .container-fluid #weather-app .second .ovrly .card .card-header, body .container-fluid #weather-app .second .ovrly .card .card-footer {
+              background: transparent;
+              border: none;
+              color: white; }
+
+/*# sourceMappingURL=style.css.map */
