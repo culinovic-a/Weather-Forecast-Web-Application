@@ -7,6 +7,7 @@ html, body {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 
     .container-fluid {
         height: 100%;
@@ -36,6 +37,10 @@ html, body {
                     width: 100%;
                     .fr {
                         padding-top: 40px;
+                        .card {
+                            background: transparent;
+                            border: none;
+                        }
                     }
     
                     .tx {
@@ -107,15 +112,39 @@ html, body {
                         background: transparent;
                         border: none;
 
-                        .card-header, .card-footer {
+                        .card-header {
                             background: transparent;
                             border: none;
                             color: white;
+                            font-size: 14px;
+                        }
+
+                        .card-footer {
+                            background: transparent;
+                            border: none;
+                            color: white;
+                            font-size: 19px;
                         }
                     }
                 }
             }
 		}
-	}
+    }
+    
+    .icons {
+        position: relative;
+        top: 95%;
+        left: 80%;
+        font-size: 15px;
+        color: #424242;
+
+        a {
+            text-decoration: none;
+            color: #424242;
+            &:hover {
+                color: white;
+            }
+        }
+    }
 }
 
