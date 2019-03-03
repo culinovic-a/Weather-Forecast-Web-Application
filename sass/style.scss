@@ -8,26 +8,27 @@ html, body {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
+    overflow-x: hidden;
 
-    .container-fluid {
-        height: 100%;
+    .content {
         background: url("../images/nis.png") no-repeat;
         background-size: cover;
 
+        .row {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
 
 		#weather-app {
-			position: absolute;
-			top: 50%;
-			left: 50%;
+            margin: 90px 0;
 			width: 80%;
-			height: 450px;
             background-color: white;
             opacity: 0.7;
-            transform: translate(-50%, -50%);
             border-radius: 5px;
 
             .first {
-                height: 58%;
+                height: 55%;
                 padding: 1% 1%;
 
                 .ovrly {
@@ -35,71 +36,101 @@ html, body {
                     opacity: 0.9;
                     height: 100%;
                     width: 100%;
-                    .fr {
-                        padding-top: 40px;
+
+                    .row {
+                        margin: 0;
+
+                        .col-md-8 {
+                            .card-header {
+                                border: none;
+                            }
+                            .card {
+                                background: transparent;
+                                border: none;
+    
+                                .col-md-3 {
+                                    padding: 20px 8px;
+
+                                    @media screen and (max-width: 767px) {
+                                        border-bottom: 1px solid white;
+                                    }
+                                }
+                            }
+
+                            .tx {
+                                color: white;
+                            }
+            
+                            .txt1, .txt2, .txt3, .txt4 {
+                                color: white;
+                                font-size: 12px;
+                            }
+                            .txt2::after {
+                                content:""; 
+                                background: white; 
+                                position: absolute; 
+                                bottom: 25%; 
+                                left: 0; 
+                                right: -25%;
+                                height: 50%; 
+                                width: 1px;
+        
+                                @media screen and (max-width: 980px) {
+                                    content: none;
+                                }
+                            }
+                            .txt3::after {
+                                content:""; 
+                                background: white; 
+                                position: absolute; 
+                                bottom: 25%;; 
+                                left: 0; 
+                                height: 50%; 
+                                width: 1px;
+        
+                                @media screen and (max-width: 980px) {
+                                    content: none;
+                                }
+                            }
+                            .txt4::after {
+                                content:""; 
+                                background: white; 
+                                position: absolute; 
+                                bottom: 25%;; 
+                                left: 0; 
+                                height: 50%; 
+                                width: 1px;
+        
+                                @media screen and (max-width: 980px) {
+                                    content: none;
+                                }
+                            }
+                        }
+                    }
+    
+                    .col-md-4 {
                         .card {
                             background: transparent;
                             border: none;
-                        }
-                    }
-    
-                    .tx {
-                        color: white;
-                    }
-    
-                    .txt1, .txt2, .txt3, .txt4 {
-                        color: white;
-                        font-size: 12px;
-                    }
-                    .txt2::after {
-                        content:""; 
-                        background: white; 
-                        position: absolute; 
-                        bottom: 25%;; 
-                        left: 0; 
-                        height: 50%; 
-                        width: 1px;
-                    }
-                    .txt3::after {
-                        content:""; 
-                        background: white; 
-                        position: absolute; 
-                        bottom: 25%;; 
-                        left: 0; 
-                        height: 50%; 
-                        width: 1px;
-                    }
-                    .txt4::after {
-                        content:""; 
-                        background: white; 
-                        position: absolute; 
-                        bottom: 25%;; 
-                        left: 0; 
-                        height: 50%; 
-                        width: 1px;
-                    }
-    
-                    .txt5 {
-                        padding-top: 30px;
 
-                        .temp {
-                            font-size: 60px;
-                            font-weight: 100;
-                            color: white;
-                        }
-
-                        p{
-                            color: white;
-                            font-size: 30px;
-                            border-bottom: 1px solid white;
+                            .temp {
+                                font-size: 60px;
+                                font-weight: 100;
+                                color: white;
+                            }
+        
+                            .plc p {
+                                color: white;
+                                font-size: 30px;
+                                border-bottom: 1px solid white;
+                            }
                         }
                     }
-                }
-                
+                }   
             }
 
             .second {
-                height: 42%;
+                height: 41%;
                 padding: 0 1% 1% 1%;
 
                 .ovrly {
@@ -108,39 +139,55 @@ html, body {
                     height: 100%;
                     width: 100%;
 
-                    .card {
-                        background: transparent;
-                        border: none;
+                    .row {
+                        margin: 0;
 
-                        .card-header {
+                        .card {
                             background: transparent;
                             border: none;
-                            color: white;
-                            font-size: 14px;
-                        }
-
-                        .card-footer {
-                            background: transparent;
-                            border: none;
-                            color: white;
-                            font-size: 19px;
+    
+                            .card-header {
+                                background: transparent;
+                                border: none;
+                                color: white;
+                                font-size: 14px;
+                            }
+    
+                            .card-footer {
+                                background: transparent;
+                                border: none;
+                                color: white;
+                                font-size: 19px;
+                            }
                         }
                     }
                 }
             }
 		}
     }
-    
+}
+
+// FOOTER
+footer {
+    background-color: #424242;
+
+    div {
+        a {
+            font-size: 10px;
+            color: white;
+
+            span {
+                font-family: 'Poiret One', cursive;
+            }
+        }
+    }
     .icons {
-        position: relative;
-        top: 95%;
-        left: 80%;
         font-size: 15px;
-        color: #424242;
+        color: rgb(90, 69, 69);
 
         a {
             text-decoration: none;
-            color: #424242;
+            color: #705b5b;
             &:hover {
                 color: white;
             }

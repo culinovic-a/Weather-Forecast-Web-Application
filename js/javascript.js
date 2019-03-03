@@ -6,7 +6,7 @@ let option = {
 
 let factory = {
 	currentWeatherData: function() {
-		$.getJSON('http://api.openweathermap.org/data/2.5/weather?id=' + option.id + '&APPID=' + option.appid + '&units=' + option.units).done(function(response) {
+		$.getJSON('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?id=' + option.id + '&APPID=' + option.appid + '&units=' + option.units).done(function(response) {
 			// console.log(response);
 			factory.initCurrentData(response);
 		});
@@ -35,7 +35,7 @@ let factory = {
 		}
 	},
 	dailyWeatherData: function() {
-		$.getJSON('http://api.openweathermap.org/data/2.5/forecast?id=' + option.id + '&APPID=' + option.appid + '&units=' + option.units + '').done(function(response) {
+		$.getJSON('https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/forecast?id=' + option.id + '&APPID=' + option.appid + '&units=' + option.units + '').done(function(response) {
 			// console.log(response);
 			factory.initDailyData(response);
 		});
